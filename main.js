@@ -28,6 +28,7 @@ const orders = [
     id: "202402021____",
     table_id: "1__1___",
     table_name: "1F-1",
+    discount_amount: 0,
     sales_date: "20240202",
     created_time: "2024-02-02T08:09:36.000+09:00",
     updated_time: "2024-02-02T08:09:36.000+09:00",
@@ -53,6 +54,7 @@ const orders = [
     id: "202402022____",
     table_id: "1__2___",
     table_name: "1F-2",
+    discount_amount: 0,
     sales_date: "20240202",
     created_time: "2024-02-02T10:58:20.000+09:00",
     updated_time: "2024-02-02T10:57:42.000+09:00",
@@ -75,6 +77,7 @@ const orders = [
     id: "202402023____",
     table_id: "1__3___",
     table_name: "1F-3",
+    discount_amount: 0,
     sales_date: "20240202",
     created_time: "2024-02-02T10:58:20.000+09:00",
     updated_time: "2024-02-02T10:57:42.000+09:00",
@@ -97,6 +100,7 @@ const orders = [
     id: "202402024____",
     table_id: "2__2___",
     table_name: "2F-2",
+    discount_amount: 0,
     sales_date: "20240202",
     created_time: "2024-02-02T10:58:20.000+09:00",
     updated_time: "2024-02-02T10:57:42.000+09:00",
@@ -128,14 +132,20 @@ const goodGroups = [
   { id: "5", name: "고기", relations_good_group: [], relations_good: [
     {
         good_id: "10000004",
+        name: "설성한우 1++등급 등심 구이용",
+        price: 13900,
         sort: 1,
     },
     {
         good_id: "10001511",
+        name: "한우 우족탕 900g",
+        price: 18000,
         sort: 1,
     },
     {
         good_id: "10001502",
+        name: "한우 고기 곰탕 500g(S)",
+        price: 12000,
         sort: 1,
     }
 ], created_time: "2022-03-10T10:30:00.000Z", updated_time: "2022-03-10T10:30:00.000Z" },
